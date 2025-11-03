@@ -1,0 +1,49 @@
+@import "tailwindcss";
+#root {
+  width: 100vw;
+  height: 100vh;
+
+  --netflix-red: #e50914;
+  --netflix-red-hover: #f40612;
+  --netflix-dark: #141414;
+  --netflix-gray: #2f2f2f;
+}
+
+.hero {
+  background-image: url("/src/assets/hero-background.jpg");
+  height: 100%;
+  width: 100%;
+}
+.hero-container {
+  width: 100%;
+  height: 50%;
+  border: 1px solid black;
+}
+.text-container{
+  height: 100%;
+}
+.header-container{
+  background-color: var(--netflix-dark);
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
